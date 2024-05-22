@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "prepare": "wsrun -m prepare"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@types/*",
+      "**/typescript"
+    ]
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.4"
+  }
+}
